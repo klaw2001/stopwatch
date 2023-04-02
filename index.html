@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="watch-strap-top">
+          <div class="strap-holes"></div>
+        </div>
+        <div class="watch-container">
+          <div class="watch-top"></div>
+          <div class="watch-inner">
+            <div class="watch-name">
+              <p>CASIO</p>
+            </div>
+            <div class="watch-inner-screen">
+              <div class="pause-and-start-container">
+                <p class="pause">pause <span>II</span></p>
+                <p class="start">start ▶</p>
+              </div>
+              <p class="timer">
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span
+                  id="seconds"
+                  >00</span
+                >
+              </p>
+              <p class="stop">reset &#8634</p>
+            </div>
+          </div>
+          <div class="watch-bottom"></div>
+        </div>
+        <div class="watch-strap-bottom">
+          <div class="strap-holes"></div>
+        </div>
+      </div>
+      <div class="button-left-container">
+        <button class="button button-left" id="pause-button" onclick="pause()">
+          
+        </button>
+      </div>
+      <div class="button-right-container">
+        <button class="button button-right" id="start-button" onclick="start()">
+          
+        </button>
+        <button
+          class="button button-right button-right-stop"
+          id="stop-button"
+          onclick="reset()"
+        >
+          
+        </button>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
+
